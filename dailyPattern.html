@@ -166,8 +166,8 @@ mean(stepsPerDay$total, na.rm=TRUE); median(stepsPerDay$total, na.rm=TRUE)</code
 <pre><code>## [1] 10765</code></pre>
 <p><br></p>
 </div>
-<div id="q2-what-is-the-average-daily-activity-pattern-which-5-min-window-was-the-most-steps-taken-on-average-each-day" class="section level4">
-<h4>Q2: What is the average daily activity pattern? Which 5-min window was the most steps taken on average each day?</h4>
+<div id="q2-what-is-the-average-daily-activity-pattern-in-which-5-min-window-were-the-most-steps-taken-on-average-each-day" class="section level4">
+<h4>Q2: What is the average daily activity pattern? In which 5-min window were the most steps taken on average each day?</h4>
 <pre class="r"><code>raw2 &lt;- select(raw, steps, datetime)
 raw2$datetime &lt;- format(strptime(raw2$datetime, &quot;%Y-%m-%d %H:%M:%S&quot;), &quot;%H%M&quot;)
 raw2 &lt;- rename(raw2, interval=datetime)

@@ -77,7 +77,7 @@ mean(stepsPerDay$total, na.rm=TRUE); median(stepsPerDay$total, na.rm=TRUE)
 
 <br>
 
-#### Q2: What is the average daily activity pattern? Which 5-min window was the most steps taken on average each day?
+#### Q2: What is the average daily activity pattern? In which 5-min window were the most steps taken on average each day?
 
 
 ```r
